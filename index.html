@@ -5,192 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Personal website for Ruifan, featuring focused software tools including YouTube Music Playlist Manager, Folderai, and News Article Merger."
+      content="Personal website for Ruifan, with links to selected software projects."
     >
-    <title>Ruifan | Personal Website</title>
+    <title>Ruifan</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="site-header" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="Ruifan home">Ruifan</a>
-      <nav class="nav-links">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-header">
+      <a class="brand" href="./">Ruifan</a>
+      <a class="header-link" href="https://github.com/hruif">GitHub</a>
     </header>
 
-    <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-art" aria-hidden="true">
-          <img
-            class="hero-shot hero-shot-youtube"
-            src="assets/youtube-playlist-manager.png"
-            alt=""
-          >
-          <img
-            class="hero-shot hero-shot-news"
-            src="assets/news-article-merger.png"
-            alt=""
-          >
-        </div>
-        <div class="hero-content">
-          <p class="eyebrow">builder of useful, personal-scale software</p>
-          <h1 id="hero-title">Ruifan</h1>
-          <p class="lede">
-            I make practical tools for the little workflow problems that quietly
-            eat whole afternoons: playlist cleanup, local folder cleanup,
-            source-aware news reading, and the odd automation that makes life
-            feel less manual.
-          </p>
-          <div class="hero-actions" aria-label="Hero links">
-            <a class="button primary" href="#projects">See Projects</a>
-            <a class="button secondary" href="https://github.com/hruif">GitHub</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section intro-section" aria-label="Site introduction">
+    <main class="page">
+      <section class="intro" aria-labelledby="intro-title">
+        <p class="eyebrow">Personal projects</p>
+        <h1 id="intro-title">I build small, practical software.</h1>
         <p>
-          This site is a compact home for projects that start from a real itch
-          and end as software someone can actually use.
+          Focused tools for everyday friction: organizing playlists, cleaning
+          local files, and reading news across multiple sources.
         </p>
       </section>
 
-      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+      <section class="projects" aria-labelledby="projects-title">
         <div class="section-heading">
-          <p class="eyebrow">selected work</p>
-          <h2 id="projects-title">Tools with a job to do</h2>
+          <p class="eyebrow">Work</p>
+          <h2 id="projects-title">Projects</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card">
-            <a
-              class="project-media"
-              href="https://hruif.github.io/YouTubeMusicPlaylistManager/"
-              aria-label="Open YouTube Music Playlist Manager"
-            >
-              <img
-                src="assets/youtube-playlist-manager.png"
-                alt="Screenshot of the YouTube Music Playlist Manager download page."
-              >
-            </a>
-            <div class="project-body">
-              <div>
-                <p class="project-kicker">desktop utility</p>
-                <h3>YouTube Music Playlist Manager</h3>
-                <p>
-                  A playlist management app for searching across saved playlists,
-                  finding duplicates, tracking unavailable songs, and cleaning up
-                  large music libraries with less guesswork.
-                </p>
-              </div>
-              <div class="tag-row" aria-label="Project areas">
-                <span>Music tools</span>
-                <span>Desktop app</span>
-                <span>Playlist cleanup</span>
-              </div>
-              <div class="link-row">
-                <a href="https://hruif.github.io/YouTubeMusicPlaylistManager/">Project Page</a>
-                <a href="https://github.com/hruif/YouTubeMusicPlaylistManager">Source</a>
-              </div>
+            <p class="project-type">Desktop utility</p>
+            <h3>YouTube Music Playlist Manager</h3>
+            <p>
+              Search saved playlists, find duplicate songs, track unavailable
+              tracks, and clean up large music libraries.
+            </p>
+            <div class="project-links">
+              <a href="https://hruif.github.io/YouTubeMusicPlaylistManager/">Site</a>
+              <a href="https://github.com/hruif/YouTubeMusicPlaylistManager">Source</a>
             </div>
           </article>
 
           <article class="project-card">
-            <a
-              class="project-media"
-              href="https://hruif.github.io/Folderai/"
-              aria-label="Open Folderai"
-            >
-              <img
-                src="assets/folderai.png"
-                alt="Screenshot of the Folderai project page."
-              >
-            </a>
-            <div class="project-body">
-              <div>
-                <p class="project-kicker">local-first desktop app</p>
-                <h3>Folderai</h3>
-                <p>
-                  A privacy-first Downloads cleaner that scans local files,
-                  groups clutter into reviewable actions, and uses a local
-                  Ollama model only when you ask for AI help.
-                </p>
-              </div>
-              <div class="tag-row" aria-label="Project areas">
-                <span>Local AI</span>
-                <span>Electron</span>
-                <span>File cleanup</span>
-              </div>
-              <div class="link-row">
-                <a href="https://hruif.github.io/Folderai/">Project Page</a>
-                <a href="https://github.com/hruif/Folderai">Source</a>
-              </div>
+            <p class="project-type">Local-first app</p>
+            <h3>Folderai</h3>
+            <p>
+              A Downloads-folder cleaner that stages file moves and deletions
+              for review, with optional help from a local Ollama model.
+            </p>
+            <div class="project-links">
+              <a href="https://hruif.github.io/Folderai/">Site</a>
+              <a href="https://github.com/hruif/Folderai">Source</a>
             </div>
           </article>
 
           <article class="project-card">
-            <a
-              class="project-media"
-              href="https://hruif-news-article-merger.hf.space/"
-              aria-label="Open News Article Merger"
-            >
-              <img
-                src="assets/news-article-merger.png"
-                alt="Screenshot of the News Article Merger web app."
-              >
-            </a>
-            <div class="project-body">
-              <div>
-                <p class="project-kicker">web app</p>
-                <h3>News Article Merger</h3>
-                <p>
-                  A source-aware news app that pulls coverage from multiple
-                  outlets and merges it into one readable article with citations,
-                  perspective notes, and a live writing stream.
-                </p>
-              </div>
-              <div class="tag-row" aria-label="Project areas">
-                <span>News</span>
-                <span>Flask</span>
-                <span>AI-assisted synthesis</span>
-              </div>
-              <div class="link-row">
-                <a href="https://hruif-news-article-merger.hf.space/">Visit Site</a>
-                <a href="https://github.com/hruif/NewsArticleMerger">Source</a>
-              </div>
+            <p class="project-type">Web app</p>
+            <h3>News Article Merger</h3>
+            <p>
+              Pulls coverage from multiple outlets and merges it into one
+              readable article with citations and perspective notes.
+            </p>
+            <div class="project-links">
+              <a href="https://hruif-news-article-merger.hf.space/">Site</a>
+              <a href="https://github.com/hruif/NewsArticleMerger">Source</a>
             </div>
           </article>
         </div>
-      </section>
-
-      <section id="about" class="section split-section" aria-labelledby="about-title">
-        <div class="section-heading">
-          <p class="eyebrow">about</p>
-          <h2 id="about-title">Small tools, sharp edges, real use</h2>
-        </div>
-        <div class="text-stack">
-          <p>
-            I like projects that begin with a concrete frustration and reward
-            careful iteration: a table that filters the way a person thinks, a
-            link that saves a few minutes, a cache that makes a rough process
-            feel immediate.
-          </p>
-          <p>
-            The common thread is practical software with a clear point of view.
-            Build the thing, use the thing, notice what still feels awkward, and
-            keep sanding.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">contact</p>
-          <h2 id="contact-title">Find me on GitHub</h2>
-        </div>
-        <a class="button primary" href="https://github.com/hruif">github.com/hruif</a>
       </section>
     </main>
   </body>
