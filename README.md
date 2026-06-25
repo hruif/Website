@@ -1,6 +1,6 @@
 # Personal Website
 
-A lightweight static personal website for Ruifan.
+A lightweight static personal website for Rui Fan.
 
 ## Links
 
